@@ -91,6 +91,6 @@ function Add_AntiMatter(Authorization_Code,AntiMatter) {
     request.open('POST','https://warp-regulator-bd7q33crqa-lz.a.run.app/api/adjust/antimatter');
     request.setRequestHeader("accept", "application/json");
     request.setRequestHeader("Content-Type", "application/json");
-    var data = `{"authorizationCode":"${Authorization_Code}"","value":${AntiMatter}`;
+    var data = `{"authorizationCode":"${Authorization_Code}","value":${AntiMatter}`;
     request.send(data);
 }
